@@ -23,7 +23,6 @@ public class View {
         return scanner.nextInt();
     }
 
-    // Submenú de métodos de ordenamiento con formato claro
     public int selectSortingMethod() {
         System.out.println("===== MÉTODOS DE ORDENAMIENTO =====");
         System.out.println("1. Ordenar por Nombre (Burbuja)");
@@ -45,7 +44,6 @@ public class View {
         return scanner.nextInt();
     }
 
-    // Método para ingresar una persona
     public Person inputPerson() {
         String name = inputName();
         int age = inputAge();
