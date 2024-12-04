@@ -10,7 +10,7 @@ public class View {
         scanner = new Scanner(System.in);
     }
 
-    // Menú principal con formato básico y claro
+    
     public int showMenu() {
         System.out.println("============ MENÚ PRINCIPAL ============");
         System.out.println("1. Ingresar personas");
@@ -35,7 +35,7 @@ public class View {
         return scanner.nextInt();
     }
 
-    // Submenú de criterios de búsqueda
+   
     public int selectSearchCriterion() {
         System.out.println("======= CRITERIOS DE BÚSQUEDA =======");
         System.out.println("1. Buscar por Edad");
@@ -52,7 +52,7 @@ public class View {
         return new Person(name, age);
     }
 
-    // Método para mostrar personas en formato simple
+   
     public void displayPersons(Person[] personas) {
         System.out.println("=== Lista de Personas ===");
         for (Person person : personas) {
@@ -60,7 +60,6 @@ public class View {
         }
     }
 
-    // Método para mostrar el resultado de una búsqueda
     public void displaySearchResult(Person person) {
         if (person != null) {
             System.out.println("Persona encontrada: " + person);
@@ -68,8 +67,7 @@ public class View {
             System.out.println("No se encontró ninguna persona con el criterio especificado.");
         }
     }
-
-    // Métodos de entrada de datos básicos
+    
     public int inputAge() {
         System.out.print("Ingrese la edad: ");
         return scanner.nextInt();
